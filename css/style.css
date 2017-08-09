@@ -1,0 +1,44 @@
+html, body {
+  height: 100%
+}
+
+nav .brand-logo i, nav {
+  float: none;
+  padding-left: 10px;
+}
+
+nav .brand-logo {
+  color: #333;
+}
+
+nav a {
+  color: #333;
+}
+
+nav ul a {
+  color: #333;
+}
+
+.parallax-container {
+  height: 100%;
+}
+
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+<!--video固定用法 -->
+video.food {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -webkit-transition: 1s opacity;
+  transition: 1s opacity;
+}

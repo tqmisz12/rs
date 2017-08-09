@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>餐廳</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+
+  <nav class="white">
+    <div class="nav-wrapper">
+      <a href="index.html" class="brand-logo"><i class="fa fa-cutlery" aria-hidden="true"></i>
+餐廳</a>
+      <a href="javascript:coid(0)" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="menu.html">美食菜單</a></li>
+        <li class="active"><a href="about_us.html">關於我們</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="menu.html">美食菜單</a></li>
+        <li class="active"><a href="about_us.html">關於我們</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <p><a href="mailto:102703017@nccu.edu.tw?subject=feedback">email me</a></p>
+
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDtxkbtZDBFHrOEkGGN63W52QpzRUuSNQM",
+      authDomain: "test-html-4f552.firebaseapp.com",
+      databaseURL: "https://test-html-4f552.firebaseio.com",
+      projectId: "test-html-4f552",
+      storageBucket: "",
+      messagingSenderId: "516365036983"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+  <!--jquery cdn-->
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".button-collapse").sideNav();
+      $('.parallax').parallax();
+    })
+  </script>
+
+</body>
+
+</html>
