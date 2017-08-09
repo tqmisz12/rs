@@ -42,7 +42,7 @@
   <div class="parallax-container">
     <a href="javascript:void(0);" class="right changeVolume white-text" rel="靜音"><i class="material-icons large">volume_off</i></a>
     <div class="parallax">
-      <video class="food" src="video/food.mp4" autoplay loop muted poster="posterimage.jpg"></video>
+      <video class="food" src="https://firebasestorage.googleapis.com/v0/b/test-html-4f552.appspot.com/o/food.mp4?alt=media&token=50754b73-d21f-4589-99cf-fd042e6399ec" autoplay loop muted poster="posterimage.jpg"></video>
     </div>
   </div>
 
@@ -117,6 +117,22 @@
     <div class="parallax"><img src="images/Afternoon_Tea.jpg"></div>
   </div>
 
+  <!--firebase-->
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDtxkbtZDBFHrOEkGGN63W52QpzRUuSNQM",
+      authDomain: "test-html-4f552.firebaseapp.com",
+      databaseURL: "https://test-html-4f552.firebaseio.com",
+      projectId: "test-html-4f552",
+      storageBucket: "test-html-4f552.appspot.com",
+      messagingSenderId: "516365036983"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+
   <!--jquery cdn-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <!-- Compiled and minified JavaScript -->
@@ -128,8 +144,8 @@
 
       <!--start slider-->
       $('.slider').slider({
-        full_width : true ,
-        height : 700
+        full_width: true,
+        height: 700
       });
 
       <!-- 控制聲音開關 -->
